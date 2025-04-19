@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Knowledge Hub ===
 Contributors: aboutzahurul
 Donate link: https://zahurul.com
 Tags: help article, knowledge base, knowledge hub, support, addon
