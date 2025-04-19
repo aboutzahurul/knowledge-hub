@@ -15,7 +15,7 @@
  * Plugin Name:       Knowledge Hub
  * Plugin URI:        https://zahurul.com/plugins/knowledge-hub
  * Description:       Simple Knowledge Hub custom post type in Wordpress.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Md. Zahurul Islam
  * Author URI:        https://zahurul.com
  * License:           GPL-3.0+
@@ -32,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) { die; }
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'KNOWLEDGE_HUB_VERSION', '1.0.0' );
+define( 'KNOWLEDGE_HUB_VERSION', '1.0.1' );
 
 /**
  * Setting global plugin name

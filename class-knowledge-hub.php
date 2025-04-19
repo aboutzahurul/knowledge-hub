@@ -87,7 +87,22 @@ class ID_Knowledge_Hub {
 		$this->plugin_name = KNOWLEDGE_HUB_NAME;
 		$this->version = KNOWLEDGE_HUB_VERSION;
 
+		// setting custom post type name, this don't require wp functionality to declare in this stage.
 		$this->post_type = 'knowledge-hub';
+
+		// Initialize the settings which dependent to wordpress functionality
+		// calling it in hook so in this stage we have required wp functionality available to declare related settings.
+		add_action('init', array($this, 'init'), 0);
+	}
+
+	/**
+	 * Initialize the settings which dependent to wordpress functionality
+	 * Calling it in hook so in this stage we have required wp functionality available to declare related settings.
+	 *
+	 * @since 1.0.1
+	 */
+	public function init() {
+
 		$this->custom_taxonomies = array(
 			'knowledge-category' => array(
 				'singular'              => _x( 'Category', 'taxonomy singular name', $this->plugin_name ),
@@ -114,6 +129,10 @@ class ID_Knowledge_Hub {
 	 * @since   1.0.0
 	 */
 	public function register_custom_post_knowledge_hub() {
+
+		if( empty( $this->post_type ) ) {
+			return false;
+		}
 
 		$singular_label     = _x( 'Knowledge Hub', 'post type singular name', $this->plugin_name );
 		$plural_label       = _x( 'Knowledge Hub', 'post type general name', $this->plugin_name );

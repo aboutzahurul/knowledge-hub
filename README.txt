@@ -5,7 +5,7 @@ Tags: help article, knowledge base, knowledge hub, support, addon
 Requires at least: 5.5
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,6 +22,9 @@ This plugin acts as a Stripe Checkout payment gateway add-on for the Islamic Don
 3. Config the addon plugin from Islamic Donation plugin payment settings
 
 == Changelog ==
+
+= Version 1.0.1 - April 19th, 2025 =
+* Fix: Fixing minor notice error: "Notice: Function _load_textdomain_just_in_time was called incorrectly..." from WordPress version 6.7.0 or later
 
 = Version 1.0.0 - February 15th, 2025 =
 * Plugin Initial release
